@@ -11,5 +11,7 @@ Servidor usado para recolectar los mensajes de los diversos sensores, para luego
 ## Ejecución  ##
 
 ``` bash
+$ cd water-base
+water-base$ npm install
 water-base$ DEBUG=myapp:* npm start
 ```
