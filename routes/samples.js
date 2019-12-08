@@ -23,7 +23,7 @@ function uploadCloud(data){
 	function(element){
 	    element.base = 1;
 	    var options ={
-		uri:"http://127.0.0.1:2000/samples",
+		uri:"https://watercloud.herokuapp.com/samples/",
 		method: 'POST',
 		json:element
 	    };
