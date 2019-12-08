@@ -43,7 +43,8 @@ function prepareUpload(){
 router.get('/', function(req, res, next) {
     var device =req.query.node; 
     var body= req.query;
-    body.create_date = new Date().toLocaleString("en-GB", {timeZone: "America/Bogota"});
+    // body.create_date = new Date().toLocaleString("en-GB", {timeZone: "America/Bogota"});
+    body.create_date = new Date().toISOString();
     db.insert({device:device,info:body},prepareUpload);
     console.log(body);
     console.log('device:'+device);
